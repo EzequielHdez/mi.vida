@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para ti, mi pequeña prinecesita hermosa❤️❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffefe9;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+            animation: backgroundMotion 10s infinite alternate ease-in-out;
+        }
+
+        /* Fondo animado */
+        @keyframes backgroundMotion {
+            0% {
+                background-color: #ffefe9;
+            }
+            50% {
+                background-color: #f7c1d7;
+            }
+            100% {
+                background-color: #ffefe9;
+            }
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff8f5;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            animation: containerFadeIn 2s ease-out;
+        }
+
+        /* Animación de entrada del contenedor */
+        @keyframes containerFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .welcome {
+            font-size: 2.5em;
+            color: #ff6b6b;
+            animation: typing 3s steps(30), blink 0.5s step-end infinite alternate, pulse 2s infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #ff6b6b;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff6b6b; }
+        }
+
+        /* Animación de pulso para el texto de bienvenida */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .message {
+            font-size: 1.2em;
+            color: #444;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 2s 1s forwards, messageGlow 1s infinite alternate;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Efecto de resplandor en el mensaje */
+        @keyframes messageGlow {
+            0% {
+                text-shadow: 0 0 5px rgba(255, 107, 107, 1), 0 0 10px rgba(255, 107, 107, 1);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 107, 107, 0.8), 0 0 20px rgba(255, 107, 107, 0.8);
+            }
+        }
+
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6b6b;
+            animation: float 6s infinite ease-in-out;
+            transform: rotate(0deg);
+            opacity: 0.8;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        /* Corazones adicionales para mejorar el efecto */
+        .heart:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: 1s; }
+        .heart:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 2s; }
+        .heart:nth-child(3) { left: 30%; animation-duration: 7s; animation-delay: 3s; }
+        .heart:nth-child(4) { left: 40%; animation-duration: 5s; animation-delay: 4s; }
+        .heart:nth-child(5) { left: 50%; animation-duration: 9s; animation-delay: 5s; }
+        .heart:nth-child(6) { left: 60%; animation-duration: 6.5s; animation-delay: 1.5s; }
+        .heart:nth-child(7) { left: 70%; animation-duration: 8.5s; animation-delay: 2.5s; }
+        .heart:nth-child(8) { left: 80%; animation-duration: 7.5s; animation-delay: 3.5s; }
+        .heart:nth-child(9) { left: 90%; animation-duration: 10s; animation-delay: 4.5s; }
+        .heart:nth-child(10) { left: 95%; animation-duration: 11s; animation-delay: 6s; }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(0.5) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(-400px) scale(1) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-800px) scale(0.5) rotate(0deg);
+                opacity: 0;
+            }
+        }
+        .btn-content {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-content:hover {
+    background-color: #ff4f4f;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">Para Ti, Mi Amor ❤️</div>
+        <div class="message">
+            ¡Hola, mi amor! Quiero hacerte saber que cada día te llevo en mi mente y en mi corazón. ¡Te quiero muchísimo, mi amor!
+            Sé que a veces soy un poco difícil de entender, pero trato de mejorar cada día para poder ser el mejor novio para ti y que te sientas a gusto, como hasta ahora.
+            Mi amor, sé que a veces te sientes mal, pero siempre recuerda que me tienes a mí para lo que necesites. Yo te apoyaré siempre que lo necesites. En tus peores momentos, te prometo estar ahí para ti, mi amor.
+            Sin más, quiero desearte un bonito día, te mando un fuerte abrazo y un besito. ¡Muaaaaaaaaaaaaaa!
+            Te amo, más de lo que las palabras pueden expresar. ¡Te amo muchísimo! ❤️❤️❤️❤️❤️❤️
+        </div>
+        <a href="contenido.html">
+            <button class="btn-content">¡Toca aquí para recibir un besito! 💋</button>
+        </a>
+    </div>
+
+    <!-- Div de corazones -->
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+</body>
+</html>

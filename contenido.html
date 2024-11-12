@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más para ti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('img/love-bubu-dudu.gif'); /* Fondo animado de besitos */
+            background-size: 100px 100px; /* Tamaño más grande del sticker */
+            background-repeat: repeat; /* Repetir el fondo */
+            background-position: top left; /* Alineación en la esquina superior izquierda */
+            animation: animateBackground 10s infinite linear;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 248, 245, 0.7); /* Fondo semitransparente */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-out;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeInImages 2s 0.5s forwards;
+        }
+
+        .images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transform: scale(0.8);
+            animation: zoomIn 1.5s forwards;
+        }
+
+        video {
+            max-width: 60%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 15px 0;
+            opacity: 0;
+            animation: fadeInVideo 2s 1s forwards;
+            background-color: rgba(255, 255, 255, 0); /* Fondo transparente en los videos */
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: bounceIn 1s ease-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #ff6b6b;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0); /* Fondo transparente en los párrafos */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 2s ease-out, bounceIn 1s ease-out 0.5s forwards;
+        }
+
+        .back-button:hover {
+            background-color: #ff4f4f;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInImages {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0.5; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInVideo {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: translateY(100px); opacity: 0; }
+            60% { transform: translateY(-10px); opacity: 1; }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes animateBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Mi Corazon de piña❤️</h1>
+        <p>Tomaaaa Muaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak ❤️❤️❤️❤️❤️❤️
+        Todo lo que ves en esta página está pensado para ti, porque eres lo más importante en mi vida.</p>
+
+        <!-- Imágenes -->
+        <div class="images">
+            <img src="img/ft1.jpeg" alt="mi princesita">
+            <img src="img/ft4.jpeg" alt="Imagen 2">
+            <img src="img/ft3.jpeg" alt="Imagen 3">
+        </div>
+        <p>las fotos que me encantan mi bebe preciosa❤️❤️</p>
+
+        <!-- Videos -->
+        <video controls>
+            <source src="img/vd1.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="img/vd2.mp4" type="video/mp4">
+        </video>
+        <p>nuestro primer video jsjsj❤️</p>
+
+        <!-- Botón para regresar -->
+        <a href="carta.html">
+            <button class="back-button">Volver</button>
+        </a>
+    </div>
+</body>
+</html>
